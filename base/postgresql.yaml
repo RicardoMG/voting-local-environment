@@ -22,6 +22,8 @@ spec:
           env:
             - name: POSTGRES_DB
               value: my-db
+            - name: POSTGRES_USER
+              value: postgres
             - name: POSTGRES_PASSWORD
               value: changeme
 ---
