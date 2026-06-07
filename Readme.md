@@ -47,20 +47,22 @@ kubectl delete -k overlays/local
 | ---------- | ---------------------- |
 | PostgreSQL | localhost:30432        |
 | pgAdmin    | http://localhost:30080 |
+| Keycloak   | http://localhost:30180 |
 
 ### Credenciales pgAdmin
 
 - Email: `admin@admin.com`
 - Password: `admin`
 
-### Credenciales PostgreSQL
+### Conexión a PostgreSQL
 
+- hostname: `postgres-service` # postgres-service.default.svc.cluster.local
+- port: `5432`
 - DB: `my-db`
-- Password: `changeme`
+- username: `postgres`
+- password: `changeme`
 
-# Conexión a postgresql
+### Credenciales keycloak
 
-hostname: postgres-service # postgres-service.default.svc.cluster.local
-port: 5432
-username: postgres
-password: changeme
+- User: admin
+- Passwrod: admin
